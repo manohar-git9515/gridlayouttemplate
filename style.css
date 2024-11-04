@@ -1,0 +1,65 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 90vh;
+    gap: 10px;
+}
+
+
+
+.one{
+    background-image: url(./house1.jpg);
+}
+.two{
+    background-image: url(./house2.jpg);
+}
+.three{
+    background-image: url(./house3.jpg);
+}
+.four{
+    background-image: url(./house4.jpg);
+}
+.five{
+    background-image: url(./house5.jpg);
+}
+.six{
+    background-image: url(./house6.jpg);
+}
+.seven{
+    background-image: url(./house7.jpg);
+}
+.eight{
+    background-image: url(./house8.jpg);
+}
+h1{
+    font-size: 1rem;
+    background-color: black ;
+    padding: 5px;
+    color: azure;
+    width: 150px;
+    text-align: center;
+    margin-top: 0;
+}
+.one,.two,.three,.four,.five,.six,.seven,.eight{
+    width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+
+}
+@media  screen and (max-width: 600px) {
+    .grid-container {
+            grid-template-columns:1fr;
+            grid-template-rows: 1fr;
+        }
+    .one,.two,.three,.four,.five,.six,.seven,.eight{
+            width: 100%;
+            height: 60vh;
+        }
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
+   .grid-container{
+    grid-template-columns: 1fr 1fr;
+   }
+   
+}
